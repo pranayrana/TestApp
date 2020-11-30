@@ -28,11 +28,11 @@ export const routes: Routes = [
   },
   {
     path:'template',
-    loadChildren: templateRoute
+    loadChildren: './template-form/template-form.module#TemplateFormModule'
   },
   {
     path:'reactive',
-    loadChildren: reactiveRoute 
+    loadChildren: './reactive-from/reactive-from.module#ReactiveFromModule' 
   },
   {
     path:'**', component: NotFoundComponent, pathMatch:'full'
