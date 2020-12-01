@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed, tick, fakeAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed, tick, fakeAsync, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import {By} from "@angular/platform-browser";
 
@@ -14,7 +14,7 @@ describe('TemplateDemoComponent', () => {
   let component: TemplateDemoComponent;
   let fixture: ComponentFixture<TemplateDemoComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     const inMemoryHeroService = jasmine.createSpyObj('InMemoryHeroService',['getHeroes']);
     inMemoryHeroService.getHeroes.and.returnValue(asyncData([{id:1, name:'pranay'}]));
 

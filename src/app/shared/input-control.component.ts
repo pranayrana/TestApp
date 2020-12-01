@@ -8,7 +8,7 @@ import { NgControl } from '@angular/forms';
 })
 export class InputControlComponent implements OnInit {
 
-  @ContentChild(NgControl) control:NgControl;
+  @ContentChild(NgControl, /* TODO: add static flag */ {}) control:NgControl;
 
   constructor() { }
 
