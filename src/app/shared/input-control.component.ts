@@ -1,6 +1,5 @@
 import { Component, OnInit, ContentChild } from '@angular/core';
 import { NgControl } from '@angular/forms';
-import { controlNameBinding } from '@angular/forms/src/directives/reactive_directives/form_control_name';
 
 @Component({
   selector: 'app-input-control',

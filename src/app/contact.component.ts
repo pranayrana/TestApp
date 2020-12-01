@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PARAMETERS } from '@angular/core/src/util/decorators';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
